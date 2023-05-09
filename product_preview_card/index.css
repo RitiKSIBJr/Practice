@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@100&display=swap");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.image {
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main,
+.image {
+    width: 18rem;
+    height: 27rem;
+}
+
+.main {
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* padding-left: 1.5rem; */
+    width: 18rem;
+    max-height: 27rem !important;
+}
+
+.pre-title,
+.title,
+.description,
+.price {
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+}
+
+.pre-title {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 0.8rem;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 2.2rem;
+    margin: 1px 0;
+    line-height: 1;
+    font-family: "Fraunces", serif;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+    width: 68%;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discounted_price {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.original_price {
+    font-size: 14px;
+    text-decoration: line-through;
+    font-weight: 700;
+}
+
+.btn {
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+    width: 80%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 700;
+    border: none;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        flex-direction: column;
+    }
+
+    .image {
+        background-image: url("./images/image-product-mobile.jpg");
+        height: 15rem;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        width: 22rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        letter-spacing: 1px;
+        width: 90%;
+    }
+
+    .main {
+        width: 22rem;
+        height: 23rem;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
